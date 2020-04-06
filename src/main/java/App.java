@@ -7,9 +7,11 @@ import main.java.model.Pokemon;
 
 public class App {
     public static void main(String[] args) throws Exception {
+        // Create list to store pokemons
         ArrayList<Pokemon> pokemons = new ArrayList<>();
         boolean running = true;
         Scanner in = new Scanner(System.in);
+        // Add pokemons to the list
         pokemons.add(new Pokemon("Bulbasaur", 1, new String[] { "Grass", "Poison" }));
         pokemons.add(new Pokemon("Ivysaur", 2, new String[] { "Grass", "Poison" }));
         pokemons.add(new Pokemon("Venusaur", 3, new String[] { "Grass", "Poison" }));
@@ -19,6 +21,8 @@ public class App {
         pokemons.add(new Pokemon("Squirtle", 7, new String[] { "Water" }));
         pokemons.add(new Pokemon("Wartortle", 8, new String[] { "Water" }));
         pokemons.add(new Pokemon("Blastoise", 9, new String[] { "Water" }));
+
+        // Focus on the code above for OOP, below is just functionality stuff.
 
         new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
 
